@@ -1,6 +1,5 @@
 p, h1, h2, h3, h4, h5, h6, button {
     font-family: "Roboto", serif;
-    color: white;
 }
 
 body {
@@ -58,7 +57,7 @@ body {
 }
 
 .project-section {
-    background-color: #bfcc8f !important;
+
     text-align: center;
     height: 320px;
     padding-bottom:20px;
@@ -155,30 +154,18 @@ body {
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 79.5%;
-    float:left;
+    width: 33%;
+    float: left;
+    margin-bottom: 20px;
+    
   }
-
   
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 8px 16px 32px 0 rgba(0,0,0,0.2);
+    transform: scale(1.25);
   }
   
-  .card-image {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 20%;
-    display:inline;
-  }
-  
-  .card-image:hover {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
+
   .container {
     padding: 2px 16px;
-  }
-
-  #modalP {
-      color:black;
   }
