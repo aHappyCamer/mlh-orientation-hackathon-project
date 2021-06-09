@@ -36,5 +36,65 @@
         </div>
         <h1>{{ title }}</h1>
     </div>
+
+    <!-- Project Section --> 
+
+    <!-- The Modal -->
+    <div id="projectModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalP">This is where the extended version of the description of a project should go.</p>
+        </div>
+    
+    </div>
+    <div class="project-section">
+        <h2 id='projectSectionText'>Project Section</h2>
+        
+        <div class="project-container" onclick="openModal(1)">
+            <p class="project-text">Project 1: This is the first project of the fellow.</p>
+            <div > 
+                <img src="./static/img/project1.jpeg" class="project-images"> 
+            </div> 
+    
+        </div>
+
+        <div class="project-container" onclick="openModal(2)">
+            <p class="project-text">Project 2: This is the first project of the fellow.</p>
+            <div > 
+                <img src="./static/img/project2.jpeg" class="project-images"> 
+            </div> 
+        </div>
+
+        <div class="project-container" onclick="openModal(3)">
+            <p class="project-text">Project 3: This is the first project of the fellow.</p>
+            <div > 
+                <img src="./static/img/project3.jpeg" class="project-images"> 
+            </div> 
+        </div>
+
+    </div>
+    <script>
+        function openModal(number){
+            var modalP = document.getElementById('modalP');
+            modalP.textContent = "This is where the extended version of the description of Project "+ number +" should go. This project is a wonderful project that this fellow has worked very hard on, using these technologies, to create this effect."
+
+            var modal = document.getElementById("projectModal");
+            modal.style.display = "block";
+
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                        modal.style.display = "none";
+                }
+            }
+
+        }
+    </script>
 </body>
 </html>
