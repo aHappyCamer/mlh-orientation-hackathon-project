@@ -52,29 +52,45 @@
     <div class="project-section">
         <h2 id='projectSectionText'>Project Section</h2>
         
-        <div class="project-container" onclick="openModal(1)">
-            <p class="project-text">Project 1: This is the first project of the fellow.</p>
-            <div > 
-                <img src="./static/img/project1.jpeg" class="project-images"> 
-            </div> 
-    
+        <div class="project-container card" onclick="openModal(1)">
+            <div class="container">
+                <p>Project 1: This is the first project of the fellow.</p>
+            </div>
         </div>
 
-        <div class="project-container" onclick="openModal(2)">
-            <p class="project-text">Project 2: This is the first project of the fellow.</p>
-            <div > 
+        <div class="card-image">
+            <div class="container"> 
+                <img src="./static/img/project1.jpeg" class="project-images"> 
+            </div> 
+        </div>
+
+        <div class="project-container card" onclick="openModal(2)">
+            <div class="container">
+                <p>Project 2: This is the first project of the fellow.</p>
+            </div>
+        </div>
+
+        <div class="card-image">
+            <div class="container"> 
                 <img src="./static/img/project2.jpeg" class="project-images"> 
             </div> 
         </div>
 
-        <div class="project-container" onclick="openModal(3)">
-            <p class="project-text">Project 3: This is the first project of the fellow.</p>
-            <div > 
+        <div class="project-container card" onclick="openModal(3)">
+            <div class="container">
+                <p>Project 3: This is the first project of the fellow.</p>
+            </div>
+        </div>
+
+        <div class="card-image">
+            <div class="container"> 
                 <img src="./static/img/project3.jpeg" class="project-images"> 
             </div> 
         </div>
 
+
     </div>
+
     <script>
         function openModal(number){
             var modalP = document.getElementById('modalP');
