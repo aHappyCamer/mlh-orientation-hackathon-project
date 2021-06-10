@@ -83,8 +83,8 @@ button {
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 15%;
-    height: 255px;
+    width: 20%;
+    height: 275px;
   }
   
   /* Style the buttons inside the tab */
@@ -116,9 +116,14 @@ button {
   .tabcontent {
     padding: 0px 12px;
     border: 1px solid #ccc;
-    width: 50%;
+    width: 85%;
     border-left: none;
-    height: 255px;
+    height: 275px;
+  }
+
+  .job-section {
+    margin: auto;
+    width: 50%;
   }
 
   .card {
@@ -197,11 +202,23 @@ button {
     text-align: center;
   }
 
-  /* profile image */
-  .image-container, #profile-image {
-    height: 40%;
-    width: 40%;
-    border-radius: 50%;
+  #image {
+    height: 100%;
+    width: 100%;
   }
+
+  .profile-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  .about-container {
+    margin: auto;
+    width: 50%;
+}
+
+#description {
+  font-size: 18px;
+}
 
 
