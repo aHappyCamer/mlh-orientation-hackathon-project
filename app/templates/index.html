@@ -64,8 +64,10 @@
         </div>
     </div>
 
+
+    <br>
     <!-- Project Section -->
-    <section id="project-section">
+    <section id="projects">
       <!-- The Modal -->
       <div id="projectModal" class="modal">
         <!-- Modal content -->
@@ -80,7 +82,7 @@
 
       <div class="project-section-class">
         <h2 id="projectSectionText">Project Section</h2>
-
+        <br>
         <div class="card">
           <img
             src="./static/img/project1.png"
@@ -154,29 +156,7 @@
         </div>
       </div>
 
-      <script>
-        function openModal(number) {
-          var modalP = document.getElementById("modalP");
-          modalP.textContent =
-            "This is where the extended version of the description of Project " +
-            number +
-            " should go. This project is a wonderful project that this fellow has worked very hard on, using these technologies, to create this effect.";
-
-          var modal = document.getElementById("projectModal");
-          modal.style.display = "block";
-
-          var span = document.getElementsByClassName("close")[0];
-          span.onclick = function () {
-            modal.style.display = "none";
-          };
-
-          window.onclick = function (event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          };
-        }
-      </script>
+      <script src="../static/js/modal.js"></script>
     </section>
     <script src="{{url_for('static', filename='../static/js/main.js')}}"></script>
 </body>
