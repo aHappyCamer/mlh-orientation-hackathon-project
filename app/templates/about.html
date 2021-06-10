@@ -6,19 +6,27 @@
 
 {% block about_content %} 
 <div class="about-container">
-  <div class="image-container">
-    <img id="profile-image" src="../static/img/logo.jpg">
+    <div class="profile-image">
+      <img id="image" src="../static/img/logo.jpg">
+    </div>
+  <div class="about-row">
+    <div id="description"> 
+      <p>
+        I'm <span id="profession">Bobby</span> from <i class="fas fa-map-marker-alt"></i> <span id="location">Queensland, Australia</span> and I am a student at the University of Queensland, Australia <br>
+        These days I am learning how to develop websites and learning new frameworks. <br>
+        My interests are learning German, playing squash, and surfing. <br>
+        Fun Fact about me: I am super flexible!
+      </p>
+    </div> 
   </div>
-  <div id="description"> 
-    <p>I'm <span id="profession">Name?</span> from <i class="fas fa-map-marker-alt"></i> <span id="location">LOCATION</span>. <br/>
-      I'm currently YOUR CURRENT STATUS(STUDENT, WORKING, LEARNING X, Y,Z, MLH FELLOWSHIP). <br>
-      My interests are INTEREST1, INTEREST2, INTEREST3. <br>
-      Fun Fact about me: YOU FUN FACT THAT YOU WOULD LIKE TO SHARE</p>
-  </div> 
 </div>
 {% endblock %}
 
 {% block about_jobs %} 
+
+
+<div class="job-section">
+<h2 class="job-section-title">Some Places I've Worked At</h2>
 <div class="tab">
   <button class="tablinks" onclick="openJob(event, 'job')" id="defaultOpen">Job</button>
   <button class="tablinks" onclick="openJob(event, 'internship1')">Internship 1</button>
@@ -27,23 +35,31 @@
 </div>
 
 <div id="job" class="tabcontent">
-  <h3>Job</h3>
-  <p>This is a job.</p>
+  <h3 class="job-title">Web Developer</h3>
+  <p class="job-description">
+    - Creation of page layouts (headings and paragraphs), website styling (colors and fonts), and page features (animations and pictures). Interactive features, such as submitting online payments securely, are a necessary feature of e-commerce sites. <br>
+    - Troubleshoot website problems <br>
+    - Maintain and update websites <br>
+    - Monitor website traffic <br>
+    - Stay up-to-date on technology</p>
+  </p>
 </div>
 
 <div id="internship1" class="tabcontent">
-  <h3>Internship 1</h3>
-  <p>This is an internship.</p> 
+  <h3 class="job-title">Internship 1</h3>
+  <p class="job-description">This is an internship.</p> 
 </div>
 
 <div id="internship2" class="tabcontent">
-  <h3>Internship 2</h3>
-  <p>This is another internship.</p>
+  <h3 class="job-title">Internship 2</h3>
+  <p class="job-description">This is another internship.</p>
 </div>
 
 <div id="volunteer" class="tabcontent">
-  <h3>Volunteer</h3>
-  <p>This is a volunteer position.</p>
+  <h3 class="job-title">Volunteer</h3>
+  <p class="job-description">This is a volunteer position.</p>
+</div>
+
 </div>
 
 {% endblock %}
