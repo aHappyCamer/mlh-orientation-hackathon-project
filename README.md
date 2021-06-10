@@ -1,11 +1,11 @@
-# Flask-Blog
+# Flask-Portfolio-Template
 
-Minimal Flask template to get started on your blog application for MLH Fellowship Production Engineering track.
+Minimal Flask portfolio template created to be utilized as an official portfolio!
  
 
 ## Installation
 
-Make sure you have python3 and pip installed
+Currently runs locally. Make sure you have python3 and pip installed
 
 
 Create and activate virtual environment using virtualenv
