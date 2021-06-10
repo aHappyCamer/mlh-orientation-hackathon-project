@@ -1,3 +1,4 @@
+
 function openJob(evt, jobName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -10,4 +11,8 @@ function openJob(evt, jobName) {
   }
   document.getElementById(jobName).style.display = "block";
   evt.currentTarget.className += " active";
+
 }
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
