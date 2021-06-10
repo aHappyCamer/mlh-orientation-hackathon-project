@@ -31,5 +31,105 @@
         <a href="#contact">Contact</a>
       </div>
     </header>
-  </body>
+
+
+    <div class="profile">
+        <div id="profile-picture" class="profile-picture">
+            <img src="./static/img/logo.jpg">
+        </div>
+        <h1>{{ title }}</h1>
+    </div>
+
+    <!-- Project Section --> 
+    <section id="project-section">
+        <!-- The Modal -->
+        <div id="projectModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalP">This is where the extended version of the description of a project should go.</p>
+            </div>
+        
+        </div>
+
+        <div class="project-section-class">
+            <h2 id='projectSectionText'>Project Section</h2>
+            
+            <div class="card">
+                <img src="./static/img/project1.png" alt="Project 1 Image" style="width:30%">
+                <div class="container">
+                <h4><b>Project 1</b></h4> 
+                <button onclick="openModal(1)">Read More</button> 
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="./static/img/project2.png" alt="Project 2 Image" style="width:26.5%">
+                <div class="container">
+                <h4><b>Project 2</b></h4> 
+                <button onclick="openModal(2)">Read More</button> 
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="./static/img/project3.png" alt="Project 3 Image" style="width:27%">
+                <div class="container">
+                <h4><b>Project 3</b></h4> 
+                <button onclick="openModal(3)">Read More</button> 
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./static/img/project4.png" alt="Project 4 Image" style="width:30%">
+                <div class="container">
+                <h4><b>Project 4</b></h4> 
+                <button onclick="openModal(4)">Read More</button> 
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="./static/img/project5.png" alt="Project 5 Image" style="width:35%">
+                <div class="container">
+                <h4><b>Project 5</b></h4> 
+                <button onclick="openModal(5)">Read More</button> 
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="./static/img/project6.png" alt="Project 6 Image" style="width:35%">
+                <div class="container">
+                <h4><b>Project 6</b></h4> 
+                <button onclick="openModal(6)">Read More</button> 
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            function openModal(number){
+                var modalP = document.getElementById('modalP');
+                modalP.textContent = "This is where the extended version of the description of Project "+ number +" should go. This project is a wonderful project that this fellow has worked very hard on, using these technologies, to create this effect."
+
+                var modal = document.getElementById("projectModal");
+                modal.style.display = "block";
+
+                var span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                            modal.style.display = "none";
+                    }
+                }
+
+            }
+        </script>
+    </section>
+</body>
 </html>
+
