@@ -7,6 +7,7 @@ h5,
 h6,
 button {
   font-family: "Roboto", serif;
+  text-align: center;
 }
 
 * {
@@ -130,4 +131,18 @@ button {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .parallax {
+    /* The image used */
+    background-image: url("../img/logo.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }

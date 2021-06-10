@@ -33,22 +33,21 @@
       </div>
     </header>
 
+    <div class="parallax">
+        <div class="profile">
+            <div id="profile-picture" class="profile-picture">
+            </div>
+            <h1>{{ title }}</h1>
 
-    <div class="profile">
-        <div id="profile-picture" class="profile-picture">
-            <img src="./static/img/logo.jpg">
-        </div>
-        <h1>{{ title }}</h1>
-
-        <div class="content">
-            {% block about_section %}{% endblock %}
-            {% block about_title %}{% endblock %}
-            {% block about_content %}{% endblock %}
-            {% block about_technologies %}{% endblock %}
-            {% block about_jobs %}{% endblock %}
+            <div class="content">
+                {% block about_section %}{% endblock %}
+                {% block about_title %}{% endblock %}
+                {% block about_content %}{% endblock %}
+                {% block about_technologies %}{% endblock %}
+                {% block about_jobs %}{% endblock %}
+            </div>
         </div>
     </div>
-
     <!-- Project Section --> 
     <section id="project-section">
         <!-- The Modal -->
