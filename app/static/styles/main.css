@@ -9,15 +9,6 @@ button {
   font-family: "Roboto", serif;
 }
 
-body {
-  background-color: #f5f5f9;
-  background-size: cover;
-  width: auto;
-  overflow-x: hidden;
-  font-family: "Roboto", serif;
-  margin: 0px;
-}
-
 * {
   margin: 0;
 }
