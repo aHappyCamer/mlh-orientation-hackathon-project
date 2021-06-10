@@ -11,3 +11,33 @@
   Fun Fact about me: YOU FUN FACT THAT YOU WOULD LIKE TO SHARE
 </p> 
 {% endblock %}
+
+{% block about_jobs %} 
+<div class="tab">
+  <button class="tablinks" onclick="openJob(event, 'job')" id="defaultOpen">Job</button>
+  <button class="tablinks" onclick="openJob(event, 'internship1')">Internship 1</button>
+  <button class="tablinks" onclick="openJob(event, 'internship2')">Internship 2</button>
+  <button class="tablinks" onclick="openJob(event, 'volunteer')">Volunteer</button>
+</div>
+
+<div id="job" class="tabcontent">
+  <h3>Job</h3>
+  <p>This is a job.</p>
+</div>
+
+<div id="internship1" class="tabcontent">
+  <h3>Internship 1</h3>
+  <p>This is an internship.</p> 
+</div>
+
+<div id="internship2" class="tabcontent">
+  <h3>Internship 2</h3>
+  <p>This is another internship.</p>
+</div>
+
+<div id="volunteer" class="tabcontent">
+  <h3>Volunteer</h3>
+  <p>This is a volunteer position.</p>
+</div>
+
+{% endblock %}
