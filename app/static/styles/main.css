@@ -196,3 +196,12 @@ button {
   h2 {
     text-align: center;
   }
+
+  /* profile image */
+  .image-container, #profile-image {
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+  }
+
+
