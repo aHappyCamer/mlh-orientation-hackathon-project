@@ -84,7 +84,7 @@ button {
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     width: 20%;
-    height: 275px;
+    height: 280px;
   }
   
   /* Style the buttons inside the tab */
@@ -92,7 +92,7 @@ button {
     display: block;
     background-color: inherit;
     color: black;
-    padding: 22px 16px;
+    padding: 25px 18px;
     width: 100%;
     border: none;
     outline: none;
@@ -116,14 +116,30 @@ button {
   .tabcontent {
     padding: 0px 12px;
     border: 1px solid #ccc;
-    width: 85%;
+    width: 800px;
     border-left: none;
-    height: 275px;
+    height: 280px;
   }
 
+  h3.job-title{
+    margin-top: 2%;
+    text-align: center; 
+  }
+  
+  .job-description {
+    margin: 1% 0 0 25%;
+    text-align: left; 
+  }
+  
   .job-section {
+    padding:22px;
     margin: auto;
     width: 50%;
+  }
+
+  .job-section-title {
+    text-align: left;
+    padding: 5% 0 2%;
   }
 
   .card {
@@ -203,6 +219,7 @@ button {
   }
 
   #image {
+    border-radius: 50%;
     height: 100%;
     width: 100%;
   }
