@@ -218,24 +218,54 @@ button {
     text-align: center;
   }
 
-  #image {
+
+#image {
     border-radius: 50%;
     height: 100%;
     width: 100%;
   }
 
-  .profile-image {
+.profile-image {
     height: 200px;
     width: 200px;
   }
 
-  .about-container {
+#about-section-title {
+    text-align: center;
+  }
+
+.about-container {
     margin: auto;
     width: 50%;
 }
 
 #description {
-  font-size: 18px;
+  font-size: 20px;
+}
+
+p.about-technologies-title {
+  padding: 20px;
+}
+
+ul.list-of-tech {
+  list-style-type: disclosure-closed;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+#name {
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+}
+
+.interest {
+  background-color:#ffff0050; 
+}
+
+
+.fas.fa-map-maker-alt{
+  color: #ff0000ad;
 }
 
 
