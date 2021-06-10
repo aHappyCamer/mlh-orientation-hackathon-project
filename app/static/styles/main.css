@@ -33,3 +33,24 @@ button {
 .header-sections a:hover {
   color: black;
 }
+
+/* Hero */
+.hero-container {
+  align-items: center;
+  background: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero-img {
+  padding-top: 110px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-content: space-around;
+  position: relative;
+  padding-top: 110px;
+}
