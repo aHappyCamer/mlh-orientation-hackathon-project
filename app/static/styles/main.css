@@ -13,8 +13,8 @@ button {
   margin: 0;
 }
 
-/* NavBar */
-.navbar {
+/* Header */
+.header-sections {
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -22,7 +22,7 @@ button {
   width: 100%;
 }
 
-.navbar a {
+.header-sections a {
   color: #808080;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -30,7 +30,6 @@ button {
   text-decoration: none;
 }
 
-.navbar a:hover {
+.header-sections a:hover {
   color: black;
 }
-
