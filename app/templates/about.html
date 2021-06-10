@@ -5,12 +5,17 @@
 {% block about_title %} <h1> Who Am I? </h1>{% endblock %}
 
 {% block about_content %} 
-<p id="description"> 
-  I'm <p id="profession">DESCRIBING WORD</p> from <i class="fas fa-map-marker-alt"></i> LOCATION. <br>
-  My interests are INTEREST1, INTEREST2, INTEREST3. <br>
-  I'm currently YOUR CURRENT STATUS(STUDENT, WORKING, LEARNING X, Y,Z, MLH FELLOWSHIP). <br>
-  Fun Fact about me: YOU FUN FACT THAT YOU WOULD LIKE TO SHARE
-</p> 
+<div class="about-container">
+  <div class="image-container">
+    <img id="profile-image" src="../static/img/logo.jpg">
+  </div>
+  <div id="description"> 
+    <p>I'm <span id="profession">Name?</span> from <i class="fas fa-map-marker-alt"></i> <span id="location">LOCATION</span>. <br/>
+      I'm currently YOUR CURRENT STATUS(STUDENT, WORKING, LEARNING X, Y,Z, MLH FELLOWSHIP). <br>
+      My interests are INTEREST1, INTEREST2, INTEREST3. <br>
+      Fun Fact about me: YOU FUN FACT THAT YOU WOULD LIKE TO SHARE</p>
+  </div> 
+</div>
 {% endblock %}
 
 {% block about_jobs %} 
