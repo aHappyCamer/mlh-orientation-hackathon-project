@@ -24,11 +24,10 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dep
 pip install -r requirements.txt
 ```
 
+
 ## Usage
 
-
 Create a .env file using the example.env template
-
 
 Start flask development server
 ```bash
@@ -36,7 +35,8 @@ $ export FLASK_ENV=development
 $ flask run
 ```
 
-##Technologies and languages used
+
+## Technologies and languages used
 > + HTML
 > + CSS
 > + Python
@@ -49,10 +49,12 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/) License
 
-##Coded by
+
+## Coded by
 > + Joey
 > + Ebenezer Teshome
 > + Linda Abundis
