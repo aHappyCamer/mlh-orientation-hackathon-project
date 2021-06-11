@@ -51,7 +51,7 @@ Please make sure to update tests as appropriate.
 
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/) License
+[MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) License
 
 
 ## Coded by
