@@ -1,7 +1,11 @@
-# Flask-Portfolio-Template
+# Hacker's portfolio 💻
+*MLH Fellowship 2021 Hackathon*
 
-Minimal Flask portfolio template created to be utilized as an official portfolio!
+Flask portfolio template created to be utilized by hackers as an official portfolio! You can use it and make it your own!
  
+ 
+<img width="500px" src="" alt="Interface img" border="0">
+
 
 ## Installation
 
@@ -32,10 +36,25 @@ $ export FLASK_ENV=development
 $ flask run
 ```
 
+##Technologies and languages used
+> + HTML
+> + CSS
+> + Python
+> + Flask
+> + Visual Studio Code
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 ## License
+[MIT](https://choosealicense.com/licenses/mit/) License
+
+##Coded by
+> + Joey
+> + Ebenezer Teshome
+> + Linda Abundis
+
 
