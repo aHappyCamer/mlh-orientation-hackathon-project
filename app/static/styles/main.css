@@ -43,6 +43,7 @@ button {
   background: white;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 50px;
 }
 
 .hero-img {
@@ -487,4 +488,6 @@ ul.list-of-tech {
 #projects {
   margin-left: 200px;
   margin-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
