@@ -55,7 +55,7 @@ Please make sure to update tests as appropriate.
 
 
 ## Coded by
-> + Joey
+> + Joey Cam
 > + Ebenezer Teshome
 > + Linda Abundis
 
