@@ -11,13 +11,11 @@
     <meta property="og:description" content="My Personal Portfolio" />
     <meta property="og:url" content="{{ url }}" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel='preconnect' href="{{'https://fonts.gstatic.com'}}">
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <link rel='preconnect' href="{{'https://fonts.gstatic.com'}}">
     <link rel='stylesheet' href="{{'https://fonts.googleapis.com/css2?family=Pacifico&display=swap'}}">
     
     <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
@@ -58,15 +56,10 @@
       </div>
     </section>
 
-        <div class="content">
-            {% block about_section %}{% endblock %}
-            {% block about_title %}{% endblock %}
-            {% block about_content %}{% endblock %}
-            {% block about_technologies %}{% endblock %}
-            {% block about_jobs %}{% endblock %}
-        </div>
-    </div>
-
+      {% block about_section %}{% endblock %}
+      {% block about_content %}{% endblock %}
+      {% block about_technologies %}{% endblock %}
+      {% block about_jobs %}{% endblock %}
 
     <br>
     <!-- Project Section -->
