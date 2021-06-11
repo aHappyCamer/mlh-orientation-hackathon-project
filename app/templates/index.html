@@ -81,7 +81,7 @@
         <br>
         <div class="card">
           <img
-            src="./static/img/project1.png"
+            src="{{url_for('static', filename='../static/img/project1.png')}}"
             alt="Project 1 Image"
             style="width: 30%"
           />
@@ -93,7 +93,7 @@
 
         <div class="card">
           <img
-            src="./static/img/project2.png"
+            src="{{url_for('static', filename='../static/img/project2.png')}}"
             alt="Project 2 Image"
             style="width: 26.5%"
           />
@@ -105,7 +105,7 @@
 
         <div class="card">
           <img
-            src="./static/img/project3.png"
+            src="{{url_for('static', filename='../static/img/project3.png')}}"
             alt="Project 3 Image"
             style="width: 27%"
           />
@@ -117,7 +117,7 @@
 
         <div class="card">
           <img
-            src="./static/img/project4.png"
+            src="{{url_for('static', filename='../static/img/project4.png')}}"
             alt="Project 4 Image"
             style="width: 30%"
           />
@@ -129,7 +129,7 @@
 
         <div class="card">
           <img
-            src="./static/img/project5.png"
+            src="{{url_for('static', filename='../static/img/project5.png')}}"
             alt="Project 5 Image"
             style="width: 35%"
           />
@@ -141,7 +141,7 @@
 
         <div class="card">
           <img
-            src="./static/img/project6.png"
+            src="{{url_for('static', filename='../static/img/project6.png')}}"
             alt="Project 6 Image"
             style="width: 35%"
           />
@@ -167,7 +167,7 @@
       </div>
     </footer>
     
-    <script src="../static/js/modal.js"></script>
+    <script src="{{url_for('static', filename='../static/js/modal.js')}}"></script>
     <script src="{{url_for('static', filename='../static/js/main.js')}}"></script>
 </body>
 </html>
