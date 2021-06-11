@@ -5,6 +5,10 @@ Flask portfolio template created to be utilized by hackers as an official portfo
  
 
 
+https://user-images.githubusercontent.com/42613217/121745206-bba01580-cac9-11eb-860e-4ace51166ac2.mp4
+
+
+
 ## Installation
 
 Currently runs locally. Make sure you have python3 and pip installed
