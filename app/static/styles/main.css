@@ -171,7 +171,8 @@ button {
 }
 
 #about-section-title {
-  padding: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
   text-align: center;
 }
 
