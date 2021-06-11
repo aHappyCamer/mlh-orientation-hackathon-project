@@ -57,17 +57,12 @@
         </div>
       </div>
     </section>
-        <h1>{{ title }}</h1>
 
-        <div class="content">
-            {% block about_section %}{% endblock %}
-            {% block about_title %}{% endblock %}
-            {% block about_content %}{% endblock %}
-            {% block about_technologies %}{% endblock %}
-            {% block about_jobs %}{% endblock %}
-        </div>
-    </div>
-
+      {% block about_section %}{% endblock %}
+      {% block about_title %}{% endblock %}
+      {% block about_content %}{% endblock %}
+      {% block about_technologies %}{% endblock %}
+      {% block about_jobs %}{% endblock %}
 
     <br>
     <!-- Project Section -->
