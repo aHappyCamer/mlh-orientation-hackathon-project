@@ -35,21 +35,25 @@
 
     <section id="home" class="hero-container">
       <div class="hero-img">
-        <img src= "../static/img/prompt.png" alt="prompt_img" />
+        <!-- <img src= "../static/img/prompt.png" alt="prompt_img" /> -->
+        <img src= "{{url_for('static', filename='img/prompt.png')}}" alt="prompt_img" />
       </div>
       <div class="hero-info">
         <h1>Hello,</h1>
         <h1>I'm a <span class="hero-subject">programmer</span></h1>
         <div class="hero-contact">
-          <a href="www.google.com" target="_blank"
-            ><img src="../static/img/github.png" alt="gihub_logo"
-          /></a>
-          <a href="www.google.com" target="_blank"
-            ><img src="../static/img/linkedin.png" alt="linkedin_logo"
-          /></a>
-          <a href="www.google.com" target="_blank"
-            ><img src="../static/img/resume.png" alt="resume_logo"
-          /></a>
+          <a href="www.google.com" target="_blank">
+            <!-- <img src="../static/img/github.png" alt="gihub_logo"/> -->
+            <img src= "{{url_for('static', filename='img/github.png')}}" alt="gihub_logo"/>
+        </a>
+          <a href="www.google.com" target="_blank">
+            <!-- <img src="../static/img/linkedin.png" alt="linkedin_logo"/> -->
+            <img src= "{{url_for('static', filename='img/linkedin.png')}}" alt="linkedin_logo"/>
+          </a>
+          <a href="www.google.com" target="_blank">
+            <!-- <img src="../static/img/resume.png" alt="resume_logo"/> -->
+            <img src= "{{url_for('static', filename='img/resume.png')}}" alt="resume_logo"/>
+          </a>
         </div>
       </div>
     </section>
