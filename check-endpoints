@@ -1,0 +1,17 @@
+#!/bin/bash
+
+filename=$1
+website=$2
+pattern="\/[^']*"
+while IFS= read -r line; 
+do 
+    if [[ $line =~ $pattern ]]
+    then
+        if curl -s --head  --request GET '$website + $BASH_REMATCH' | grep "404 NOT FOUND" > /dev/null; 
+        then 
+           echo "error"
+        else
+           echo "success"
+        fi
+    fi
+done < $filename
