@@ -1,18 +1,34 @@
 import os
 from flask import Flask, request, render_template, send_from_directory
-from dotenv import load_dotenv
-from . import db
-#... for /register
-from werkzeug.security import generate_password_hash
-from app.db import get_db
-#... for /login
 from werkzeug.security import check_password_hash, generate_password_hash
-from app.db import get_db
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
-load_dotenv()
 app = Flask(__name__)
-app.config['DATABASE'] = os.path.join(os.getcwd(), 'flask.sqlite')
-db.init_app(app)
+app.config['SQLALCHEMY_DATABASE_URI']= 'postgresql+psycopg2://{user}:{passwd}@{host}:{port}/{table}'.format(
+	user=os.getenv('POSTGRES_USER'),
+	passwd=os.getenv('POSTGRES_PASSWORD'),
+	host=os.getenv('POSTGRES_HOST'),
+	port=5432,
+	table=os.getenv('POSTGRES_DB'))
+
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+
+class UserModel(db.Model):
+    __tablename__ = 'users'
+
+    username = db.Column(db.String(), primary_key=True)
+    password = db.Column(db.String())
+
+    def __init__(self, username, password):
+        self.username = username
+        self.password = password
+
+    def __repr__(self):
+        return f"<User {self.username}>"
 
 @app.route('/')
 def index():
@@ -22,7 +38,6 @@ def index():
 def check():
     return 'Works'
 
-# /register
 @app.route('/register', methods=('GET', 'POST'))
 def register():
     if request.method == 'POST':
@@ -51,9 +66,8 @@ def register():
             return error, 418
 
     ## TODO: Return a register page
-    return "Register Page not yet implemented", 501
+    return "Register Page not yet implemented....", 501
 
-#... /login
 @app.route('/login', methods=('GET', 'POST'))
 def login():
     if request.method == 'POST':
