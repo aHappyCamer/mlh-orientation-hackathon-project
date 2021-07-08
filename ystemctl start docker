@@ -1,0 +1,20 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+   Loaded: loaded (/usr/lib/systemd/system/docker.service; disabled; vendor preset: disabled)
+   Active: [0;1;32mactive (running)[0m since Sun 2021-07-04 22:22:50 UTC; 39min ago
+     Docs: https://docs.docker.com
+ Main PID: 11880 (dockerd)
+    Tasks: 10
+   Memory: 91.1M
+   CGroup: /system.slice/docker.service
+           └─11880 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Jul 04 22:22:50 ip-172-31-39-128.us-east-2.compute.internal dockerd[11880]: time="2021-07-04T22:22:50.639073636Z" level=info msg="Loading containers: done."
+Jul 04 22:22:50 ip-172-31-39-128.us-east-2.compute.internal dockerd[11880]: time="2021-07-04T22:22:50.744449298Z" level=info msg="Docker daemon" commit=b0f5bc3 graphdriver(s)=overlay2 version=20.10.7
+Jul 04 22:22:50 ip-172-31-39-128.us-east-2.compute.internal dockerd[11880]: time="2021-07-04T22:22:50.744640270Z" level=info msg="Daemon has completed initialization"
+Jul 04 22:22:50 ip-172-31-39-128.us-east-2.compute.internal systemd[1]: Started Docker Application Container Engine.
+Jul 04 22:22:50 ip-172-31-39-128.us-east-2.compute.internal dockerd[11880]: time="2021-07-04T22:22:50.808503407Z" level=info msg="API listen on /var/run/docker.sock"
+Jul 04 22:23:15 ip-172-31-39-128.us-east-2.compute.internal dockerd[11880]: time="2021-07-04T22:23:15.411403553Z" level=info msg="ignoring event" container=6a4e034f694abd8b527d224008ae74e8487213c520ac7d95ce65c4ce1b4ee691 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Jul 04 22:23:15 ip-172-31-39-128.us-east-2.compute.internal dockerd[11880]: time="2021-07-04T22:23:15.875695454Z" level=info msg="Layer sha256:8f6f2dc7800df5a89ae6571cf6e6a3261e957e02fe5b1e9b4d448bbdc771ae95 cleaned up"
+Jul 04 22:23:20 ip-172-31-39-128.us-east-2.compute.internal dockerd[11880]: time="2021-07-04T22:23:20.197809818Z" level=info msg="ignoring event" container=8450877a2f06ccba25b67bff3059b2bbee172f553344d722e6ce868f4c88294c module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Jul 04 22:23:22 ip-172-31-39-128.us-east-2.compute.internal dockerd[11880]: time="2021-07-04T22:23:22.752045906Z" level=info msg="Layer sha256:9ed40cb5661f3fb34eff2bb508a35245cb9ccb134949f0ebb5e0efdab7bd1fbb cleaned up"
+Jul 04 22:48:08 ip-172-31-39-128.us-east-2.compute.internal dockerd[11880]: time="2021-07-04T22:48:08.990430259Z" level=info msg="ignoring event" container=e39f7a36be81a97bba58f2f8158a1cf50f12487a55bd04ab2101a7180527658a module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
