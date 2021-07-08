@@ -1,8 +1,6 @@
 name: Lint
 
 on: 
-  # Trigger the workflow on push or pull requests,
-  # but only for the branch named below
   push:
     branches:
       - feat-cicd
