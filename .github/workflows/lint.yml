@@ -3,10 +3,10 @@ name: Lint
 on: 
   push:
     branches:
-      - feat-cicd
+      - master
       pull_request:
         branches:
-          - feat-cicd
+          - master
 
 jobs:
   run-linters:
