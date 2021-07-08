@@ -1,5 +1,6 @@
-# Hacker's portfolio 💻
+# Hacker's portfolio 💻 
 *MLH Fellowship 2021 Hackathon*
+**Note: initial-hack branch contains the original hack project (pre-trainual).**
 
 Flask portfolio template created to be utilized by hackers as an official portfolio! You can use it and make it your own!
  
