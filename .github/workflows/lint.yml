@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - master
-      pull_request:
-        branches:
-          - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   run-linters:
@@ -30,4 +30,3 @@ jobs:
         with:
           black: true
           flask8: true
-
