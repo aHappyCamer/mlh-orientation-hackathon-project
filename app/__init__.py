@@ -5,14 +5,12 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
 app = Flask(__name__)
-app.config[
-    "SQLALCHEMY_DATABASE_URI"
-] = "postgresql+psycopg2://{user}:{passwd}@{host}:{port}/{table}".format(
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg2://{user}:{passwd}@{host}:{port}/{table}".format(
     user=os.getenv("POSTGRES_USER"),
     passwd=os.getenv("POSTGRES_PASSWORD"),
     host=os.getenv("POSTGRES_HOST"),
     port=5432,
-    table=os.getenv("POSTGRES_DB"),
+    table=os.getenv("POSTGRES_DB")
 )
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
@@ -68,7 +66,8 @@ def register():
             return error, 418
 
     # TODO: Return a restister page
-    return "Register Page not yet implemented", 501
+    # return "Register Page not yet implemented", 501
+    return render_template('register.html', title="Register")
 
 
 @app.route("/login", methods=("GET", "POST"))
@@ -90,4 +89,5 @@ def login():
             return error, 418
 
     # TODO: Return a login page
-    return "Login Page not yet implemented", 501
+    # return "Login Page not yet implemented", 501
+    return render_template('login.html', title="Login")
