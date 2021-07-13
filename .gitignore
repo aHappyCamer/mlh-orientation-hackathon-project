@@ -5,4 +5,3 @@ __pycache__
 flask.sqlite
 python3-virtualenv
 .vscode
-user_conf.d/nginx-conf.conf
