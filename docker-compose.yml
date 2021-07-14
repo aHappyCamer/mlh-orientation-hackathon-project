@@ -1,6 +1,7 @@
 version: "3"
 services:
   web:
+    container_name: web
     build: .
     # ports:
     #   - "5000:80"
@@ -12,11 +13,13 @@ services:
     depends_on:
       - db
   db:
+    container_name: db
     image: postgres
     restart: always
     env_file:
       - .env
   nginx:
+    container_name: nginx
     image: jonasal/nginx-certbot:latest
     restart: unless-stopped
     env_file:
@@ -29,6 +32,17 @@ services:
       - ./user_conf.d:/etc/nginx/user_conf.d
     depends_on:
       - web
+  cadvisor:
+    container_name: cadvisor
+    image: gcr.io/cadvisor/cadvisor:latest
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
 volumes:
   nginx_secrets:
     
