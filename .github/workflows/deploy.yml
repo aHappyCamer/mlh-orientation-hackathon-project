@@ -29,4 +29,14 @@ jobs:
           SSH_IP: ${{ secrets.SSH_IP }}
           
       - name: Deploy site
-        run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && git fetch && git reset --hard origin/master && docker-compose down && docker-compose up -d --build && curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"'
+        run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && git fetch && git reset --hard origin/master && docker-compose down && docker-compose up -d --build'
+
+      - name: Check Deployment status
+        run: ssh my-vm 'cd ${{ secrets.PROJECT_ROOT }} && docker-compose -ps
+      
+      - name: Discord success notification
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
+      
+      - name: Discord failure notification
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚨 Deployment Failed"
+        
