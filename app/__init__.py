@@ -40,7 +40,7 @@ def index():
     return render_template("index.html", url=os.getenv("URL"))
 
 
-@app.route("/healthhhh")
+@app.route("/health")
 def check():
     return "Works"
 
